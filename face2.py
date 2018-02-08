@@ -36,16 +36,16 @@ def PILMat_to_cvMat(image):
 	'''
 	Change the matrix from the format of PIL to openCV.
 	'''
-    mat =[]
-    for l in image:
-        x=[]
-        for l2 in l:
-            r,g,b = l2[0],l2[1],l2[2]
-            x.append([b,g,r])
-        mat.append(x)
+	mat =[]
+	for l in image:
+		x=[]
+		for l2 in l:
+			r,g,b = l2[0],l2[1],l2[2]
+			x.append([b,g,r])
+		mat.append(x)
 
-    new_image = np.asarray(mat)
-    return new_image
+	new_image = np.asarray(mat)
+	return new_image
 
 
 
